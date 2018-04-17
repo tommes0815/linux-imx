@@ -261,7 +261,6 @@
 	status = "okay";
 };
 
-
 &usdhc2 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_usdhc2>;
@@ -285,7 +284,8 @@
 				MX6UL_PAD_GPIO1_IO03__REF_CLK_32K 	0x10059
 				MX6UL_PAD_GPIO1_IO06__GPIO1_IO06	0x4001f8b0
 				MX6UL_PAD_GPIO1_IO07__GPIO1_IO07	0x4001f8b0
-				
+				MX6UL_PAD_LCD_DATA16__GPIO3_IO21     0x1f0b0	/* ana detect, pull up 22k, Hysteresis*/
+				MX6UL_PAD_LCD_DATA17__GPIO3_IO22     0x1f0b0	/* tos detect, pull up 22k, Hysteresis */
 			>;
 		};
 		
